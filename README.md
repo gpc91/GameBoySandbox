@@ -5,6 +5,7 @@ Experimenting with https://github.com/gbdk-2020/gbdk-2020 to make games for the 
 Using:
 
 BGB (emulator/debugger) for testing: https://bgb.bircd.org/
+
 Gameboy Tile Designer (gbtd for creating sprites and images): https://devrs.com/gb/hmgd/gbtd.html
 
 ---

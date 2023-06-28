@@ -4,24 +4,6 @@
 #include "assets/sprites/ball.c"
 #include "game.c"
 
-
-void entity_frame_process(Entity *entity, Bounds *bounds)
-{
-    entity->x += entity->xd;
-    entity->y += entity->yd;
-
-    if (entity->x > bounds->w || entity->x < bounds->x)
-    {
-        entity_flip_x(entity);
-    }
-
-    if (entity->y > bounds->h || entity->y < bounds->y)
-    {
-        entity_flip_y(entity);
-    }
-    
-}
-
 void main()
 {
 
@@ -46,7 +28,7 @@ void main()
 
     while (1)
     {      
-        entity_frame_process(&ball, &bounds);       
+        entity_position_update(&ball, &bounds);       
         move_sprite(0, ball.x, ball.y);
         delay(50);        
     }
